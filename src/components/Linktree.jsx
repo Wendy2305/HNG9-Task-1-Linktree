@@ -1,36 +1,56 @@
 import React from 'react'
-import profile_pic from '../images/profile__img.jpg'
+import profile_pic from '../images/Id photo.png'
 import github from '../images/github_icon.png'
 import zuri from '../images/zuri.png'
 import i4g from '../images/I4G.png'
 import slack from '../images/slack.png'
+import share from '../images/share_button.svg'
 import '../App.css'
 const Linktree = () => {
   return (
     <div className="entire-page">
-
-        <img src={profile_pic} alt="Wendy Nweje"/>
-
+        <span>
+        <img id="profile__img" src={profile_pic} alt="Wendy Nweje"/>
+        <p id = "slack"> Slack Username: Chinwendu Nweje</p>
+        <img className="share" src={share} alt="Share button"/>
+        </span>
         <h1>Chinwendu Nweje</h1>
 
         <div className='links'>
-          <a className="button-link" id= "twitter" href="https://twitter.com/chi_thetechsis"> Twitter Link</a>
+          <a className="button-link" id= "twitter" href="https://twitter.com/chi_thetechsis"> Twitter Link </a>
+
           <a className="button-link" id="btn__zuri" href="https://training.zuri.team/"> Zuri Team</a>
-          <a className="button-link" id="books" href="http://books.zuri.team/"> Zuri Books</a>
-          <a className="button-link" id = "book__python" href="https://books.zuri.team/"> Python Books</a>
-          <a className="button-link"id ="pitch" href="https://background.zuri.team/"> Background Checks for Coders</a>
-          <a className="button-link" id="book__design" href="https://books.zuri.team/design-rules"> Design Books</a>
+
+          <a className="button-link" id="books" href="http://books.zuri.team/"> Zuri Books 
+              <p className='subtext'>Find the best books on design and coding here</p>
+          </a>
+              
+
+          <a className="button-link" id = "book__python" href="https://books.zuri.team/"> Python Books 
+              <p className='subtext'>Get quality python books at affordable prices !</p> 
+          </a> 
+              
+
+          <a className="button-link"id ="pitch" href="https://background.zuri.team/"> Background Checks for Coders 
+              <p className='subtext'>Need affordable coding background checks? We've got you covered!</p>
+          </a>
+              
+
+          <a className="button-link" id="book__design" href="https://books.zuri.team/design-rules"> Design Books 
+              <p className='subtext'>Get free design books offered by Zuri </p> 
+          </a> 
+              
         </div>
 
-        <div className="socials">
-            <img src={github} alt="GitHub Logo"/>
-            <img src={slack} alt="Slack Logo"/>
+        <div className="social-div">
+            <img className="socials" src={slack} alt="Slack Logo"/>
+            <img className="socials" src={github} alt="GitHub Logo"/>
         </div>
 
         <footer>
-        <img src={zuri} alt="Zuri Logo"/>
-        <p>HNG Internship 9 Frontend Task</p>
-        <img src={i4g} alt="I4G Logo"/>
+          <img className="foot-items"src={zuri} alt="Zuri Logo"/>
+          <p className="foot-items"> HNG Internship 9 Frontend Task</p>
+          <img className="foot-items" src={i4g} alt="I4G Logo"/>
         </footer>
     </div>
   )

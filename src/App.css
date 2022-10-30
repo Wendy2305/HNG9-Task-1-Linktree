@@ -3,8 +3,21 @@
   text-align: center;
 }
 
+#profile__img{
+  height: 5.5rem;
+  width: 5.5rem;
+}
+
+#slack{
+  display: none;
+}
 .entire-page{
   margin-top: 64px;
+}
+.share{
+  position:absolute;
+  padding-left: 18.5rem;
+  right: 10%;
 }
 h1{
   font-family: 'Inter';
@@ -24,16 +37,19 @@ a:link {
   
 }
 
+.button-link:hover{
+  background: #D0D5DD;
+}
 
 .button-link{ 
   
   background: #EAECF0;
   border: 1px solid #EAECF0;
   border-radius: 0.5rem;
-  width: 75%;
+  width: 90%;
   height: 4.75rem;
   box-sizing: border-box;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Inter';
@@ -47,6 +63,48 @@ a:link {
  
 }
 
+.subtext{
+  margin-top: 5px;
+  display: none;
+}
+
+.button-link:hover > .subtext{
+  color: #eaecf0;
+  background-color: #101828;
+  display: block;
+}
+
 .socials{
+    padding-right: 45px;
+    margin-top: 24px;
+    margin-bottom: 64px;
+}
+
+.social-div{
+  padding-left: auto;
+  padding-right: auto;
+}
+
+footer{
+  display:flex;
   align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid #eaecf0;
+  margin-top: 48px;
+  margin-bottom: 20px;
+  color: #667085;
+}
+
+@media only screen and (max-width: 1050px) {
+
+  footer{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+  .foot-itmes{
+    margin-left: 0px;
+  }
 }
