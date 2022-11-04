@@ -1,12 +1,20 @@
 import React from 'react'
 import profile_pic from '../images/Id photo.png'
 import github from '../images/github_icon.png'
-import zuri from '../images/zuri.png'
-import i4g from '../images/I4G.png'
 import slack from '../images/slack.png'
 import share from '../images/share_button.svg'
+
+
 import '../App.css'
+
+import {useNavigate} from "react-router-dom"
+import Footer from '../components/Footer'
+
+
+
 const Linktree = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="entire-page">
         <span>
@@ -38,6 +46,11 @@ const Linktree = () => {
 
           <a className="button-link" id="book__design" href="https://books.zuri.team/design-rules"> Design Books 
               <p className='subtext'>Get free design books offered by Zuri </p> 
+         
+          </a>
+
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
+          <a className="button-link" id="contact" href="" onClick={()=>navigate("/contact")} > Contact Me
           </a> 
               
         </div>
@@ -47,11 +60,9 @@ const Linktree = () => {
             <img className="socials" src={github} alt="GitHub Logo"/>
         </div>
 
-        <footer>
-          <img className="foot-items"src={zuri} alt="Zuri Logo"/>
-          <p className="foot-items"> HNG Internship 9 Frontend Task</p>
-          <img className="foot-items" src={i4g} alt="I4G Logo"/>
-        </footer>
+        
+          <Footer/>
+        
     </div>
   )
 }
