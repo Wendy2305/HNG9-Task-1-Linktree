@@ -1,7 +1,7 @@
 import './App.css';
 import {BrowserRouter,Routes,Route} from "react-router-dom";
-import Linktree from './components/Linktree';
-import Contact from './components/Contact';
+import Linktree from './screens/Linktree';
+import Contact from './screens/Contact';
 
 function App() {
   return (
