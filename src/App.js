@@ -5,7 +5,7 @@ import Contact from './screens/Contact';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Linktree/>}/>

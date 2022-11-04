@@ -16,6 +16,7 @@ const Linktree = () => {
   const navigate = useNavigate();
 
   return (
+    <div className="App">
     <div className="entire-page">
         <span>
         <img id="profile__img" src={profile_pic} alt="Wendy Nweje"/>
@@ -63,6 +64,7 @@ const Linktree = () => {
         
           <Footer/>
         
+    </div>
     </div>
   )
 }
