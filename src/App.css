@@ -89,7 +89,8 @@ footer{
   display:flex;
   align-items: center;
   justify-content: space-evenly;
-  border-top: 1px solid #eaecf0;
+  border-top: 2px solid #eaecf0;
+  padding-top: 20px;
   margin-top: 48px;
   margin-bottom: 20px;
   color: #667085;
@@ -98,13 +99,12 @@ footer{
 @media only screen and (max-width: 1050px) {
 
   footer{
-    display:flex;
-    align-items: center;
+    
+    align-items:flex-start;
     flex-direction: column;
+    margin-left: 10px;
     
   }
 
-  .foot-itmes{
-    margin-left: 0px;
-  }
+  
 }

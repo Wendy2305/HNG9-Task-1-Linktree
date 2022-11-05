@@ -45,6 +45,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+
     
 }
 .first-row{
@@ -64,7 +65,7 @@
 .message-box{
     width: 46.625rem;
     /*height: 8.25rem;*/
-    text-align: top;
+    /*text-align: top;*/
     padding-top: 4px;
     padding-bottom: 8rem;
     line-height: 44px;
@@ -72,6 +73,7 @@
 
 .message-box::placeholder{
     padding-top: 0px;
+    
 }
 
 .submit-message{
@@ -119,6 +121,8 @@
 
     .input-box{
         width: 154%;
+        font-size: 100%;
+        
     }
     .first-row{
         display: flex;
@@ -128,6 +132,8 @@
 
     .message-box{
         width: 90%;
+        /*text-align: top;*/
+        height: 60px;
     }
     .email-box{
         width: 90%;
@@ -135,6 +141,7 @@
 
     .submit-message{
         width: 95%;
+        margin-bottom: 50px;
     }
 
   }

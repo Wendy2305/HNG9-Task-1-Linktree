@@ -6,8 +6,8 @@ import Input from '../components/Input'
 import '../styles/contactpage.css'
 
 const Contact = () => {
-
-  const initialValues ={ FirstName:"", LastName:"", EmailData:"", MessageData:"" };
+  
+  const initialValues ={ FirstName:"", LastName:"", EmailData:""};
 
   const [contactValues, setContactValues] = useState(initialValues);
   const [contactErrors, setContactErrors] = useState({});
@@ -15,7 +15,7 @@ const Contact = () => {
   const [isSubmit, setIsSubmit] = useState(false);
   const [checked, setChecked] = React.useState(false);
 
-  
+  const[messageData, setMessageData] = useState('')
 
   const InputFunc =  (e) => {
     const { name, value } = e.target;
@@ -26,6 +26,15 @@ const Contact = () => {
       e.preventDefault();
       setContactErrors(validate(contactValues))
       setIsSubmit(true);
+      if (Object.keys(contactErrors).length === 0 && isSubmit) {
+        alert(
+       `Message has been sent successfully!!
+
+        FirstName: ${contactValues.FirstName}
+        LastName: ${contactValues.LastName}
+        Email: ${contactValues.EmailData}
+        Message: ${messageData}`);
+      }
   }
   
   const validate = (values) =>{
@@ -42,7 +51,7 @@ const Contact = () => {
     }else if (!regex.test(values.EmailData)) {
       errors.EmailData = "This is not a valid email format!";
     }
-    if (!values.MessageData){
+    if (!messageData){
       errors.MessageData = 'Please leave a message !'
     }
     return errors;
@@ -56,7 +65,7 @@ const Contact = () => {
         
         <p> Hi there, contact me to ask me about anything you have in mind </p>
         
-        <pre>{JSON.stringify(contactValues,undefined, 2)}</pre>
+        {/* <pre>{JSON.stringify(contactValues,undefined, 2)}</pre> */}
         
         <form onSubmit={submitFunc}>
               <div className="first-row">
@@ -91,22 +100,22 @@ const Contact = () => {
               <Input
                     id = "email"
                     classname="email-box input-box"
-                    type="text"
+                    type="email"
                     name = "EmailData"
                     value = {contactValues.EmailData}
                     placeholder="yourname@email.com"
                     onChange={() => InputFunc}/>
                     <p className='errormessage'>{contactErrors.EmailData}</p>
 
-              <label className="form-label">Message</label>
-              <Input
+              <label className="form-label">Message</label><br/>
+              <textarea
                     id = "message"
-                    classname="message-box input-box"
-                    type="text"
+                    className="message-box input-box"
                     name = "MessageData"
-                    value = {contactValues.MessageData}
-                    placeholder="Send me a message and I'll reply you as soon as possible."
-                    onChange={() => InputFunc}/>
+                    type="text"
+                    value = {messageData}
+                    placeholder= "Send me a message! "
+                    onChange={e => setMessageData(e.target.value)}/>
                     <p className='errormessage'>{contactErrors.MessageData}</p>
 
             
