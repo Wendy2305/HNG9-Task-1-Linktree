@@ -104,6 +104,12 @@
 
 }
 
+.submit-message:hover{
+    color: #eaecf0;
+    background-color: #175CD3;
+    display: block;
+  }
+
 @media only screen and (max-width: 1050px) {
 
     .entire-contact-page{
