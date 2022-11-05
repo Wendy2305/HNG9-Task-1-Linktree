@@ -9,6 +9,7 @@ The first task is to design a Linktree-like site which provides links to many pa
 <br/>
 
 REQUIREMENTS FOR STAGE 1<br>
+----------------------------------------------
 Create a page like Linktree that allows a person show their personal profile and link to various digital things that they sell.
 The profile section
 
@@ -21,8 +22,9 @@ The profile section
 - An Anchor tag styled as a Button that redirects to to [Python Books](https://books.zuri.team/python-for-beginners?ref_id=), where you feature the book as if you were selling it.The reference id must be unique and will give you royalties if any sales of the book come
 - An Anchor tag styled as a Button that redirects to to [Background Check for Coders](https://background.zuri.team), where you pitch a service for doing background checks on coders.
 - An Anchor tag styled as a Button that redirects to [Design Books](https://books.zuri.team/design-rules0) where you pitch the free design book offered by Zuri.
-------------------------------------------------
+
 REQUIREMENTS FOR STAGE 2<BR>
+------------------------------------------------
 **Task Details**: Continue from the stage 1 task,
 
 - Add another anchor tag styled as a Button with an id of '**contact**' that redirects to **“/contact**” page in your app. ✅
@@ -55,14 +57,14 @@ REQUIREMENTS FOR STAGE 2<BR>
 - test: Everything related to testing
 - docs: Everything related to documentation
 - chore: Regular code maintenance.
-
-in this manner
-------------------------------------------------
+  
 TECHNOLOGIES USED <br>
+------------------------------------------------
 - React.Js
 - Netlify
-----------------------------
+  
 ACKNOWLEDGEMENTS <br>
+----------------------------
 - I4G- [Ingresive for good](https://ingressive.org)
 - HNG- [Zuri Internship](https://zuri.team)
 ---------------------------------------------
