@@ -45,6 +45,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    
 }
 .first-row{
     display: flex;
@@ -89,4 +90,10 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+}
+
+.errormessage{
+    color: red;
+    font-size: 16px;
+    margin-top: 0px;
 }

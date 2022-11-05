@@ -37,7 +37,7 @@ const Contact = () => {
       errors.LastName = "First name is required"
     }
     if (!values.EmailData){
-      errors.EmailData = "First name is required"
+      errors.EmailData = "Email is required"
     }else if (!regex.test(values.EmailData)) {
       errors.EmailData = "This is not a valid email format!";
     }
@@ -69,7 +69,7 @@ const Contact = () => {
                             value = {contactValues.FirstName}
                             placeholder="Enter your firstname"
                             onChange={() => InputFunc}/>   
-                            <p>{contactErrors.FirstName}</p>   
+                            <p className='errormessage'>{contactErrors.FirstName}</p>   
                   </div>
 
                   <div className="Side">
@@ -82,7 +82,7 @@ const Contact = () => {
                             value = {contactValues.LastName}
                             placeholder="Enter your lastname"
                             onChange={() => InputFunc}/>
-                            <p>{contactErrors.LastName}</p>
+                            <p className='errormessage'>{contactErrors.LastName}</p>
                   </div>
               </div>
 
@@ -95,7 +95,7 @@ const Contact = () => {
                     value = {contactValues.EmailData}
                     placeholder="yourname@email.com"
                     onChange={() => InputFunc}/>
-                    <p>{contactErrors.EmailData}</p>
+                    <p className='errormessage'>{contactErrors.EmailData}</p>
 
               <label className="form-label">Message</label>
               <Input
@@ -106,7 +106,7 @@ const Contact = () => {
                     value = {contactValues.MessageData}
                     placeholder="Send me a message and I'll reply you as soon as possible."
                     onChange={() => InputFunc}/>
-                    <p>{contactErrors.MessageData}</p>
+                    <p className='errormessage'>{contactErrors.MessageData}</p>
 
             
             <label className="form-label">
