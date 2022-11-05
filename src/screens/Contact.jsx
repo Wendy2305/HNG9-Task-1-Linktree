@@ -11,6 +11,7 @@ const Contact = () => {
 
   const [contactValues, setContactValues] = useState(initialValues);
   const [contactErrors, setContactErrors] = useState({});
+  // eslint-disable-next-line no-unused-vars
   const [isSubmit, setIsSubmit] = useState(false);
   const [checked, setChecked] = React.useState(false);
 
