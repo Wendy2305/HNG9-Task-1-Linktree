@@ -7,13 +7,13 @@ import share from '../images/share_button.svg'
 
 import '../App.css'
 
-import {useNavigate} from "react-router-dom"
+import {Link} from "react-router-dom"
 import Footer from '../components/Footer'
 
 
 
 const Linktree = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <div className="App">
@@ -51,9 +51,9 @@ const Linktree = () => {
           </a>
 
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
-          <a className="button-link" id="contact" href="" onClick={()=>navigate("/contact")} > Contact Me
-          </a> 
-              
+            {/*} onClick={()=>navigate("/contact")} */}
+          {/* <a className="button-link" id="contact" href="/contact" > Contact Me</a>  */}
+          <Link className="button-link" to='/contact' id='contact'> Contact Me </Link> 
         </div>
 
         <div className="social-div">

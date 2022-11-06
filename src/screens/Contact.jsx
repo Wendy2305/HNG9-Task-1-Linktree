@@ -70,7 +70,7 @@ const Contact = () => {
         <form onSubmit={submitFunc}>
               <div className="first-row">
                   <div className="Side">
-                      <label className="first-row-label form-label">First Name</label><br/>
+                      <label className="first-row-label form-label" htmlFor="first_name">First Name</label><br/>
                       <Input
                             id = "first_name"
                             classname="input-box"
@@ -83,7 +83,7 @@ const Contact = () => {
                   </div>
 
                   <div className="Side">
-                      <label className="first-row-label form-label">Last Name</label><br/>
+                      <label  className="first-row-label form-label" htmlFor="last_name">Last Name</label><br/>
                       <Input
                             id = "last_name"
                             classname="input-box"
@@ -96,7 +96,7 @@ const Contact = () => {
                   </div>
               </div>
 
-              <label className="form-label">Email</label>
+              <label className="form-label" htmlFor="email" >Email</label>
               <Input
                     id = "email"
                     classname="email-box input-box"
@@ -107,7 +107,7 @@ const Contact = () => {
                     onChange={() => InputFunc}/>
                     <p className='errormessage'>{contactErrors.EmailData}</p>
 
-              <label className="form-label">Message</label><br/>
+              <label className="form-label" htmlFor="message">Message</label><br/>
               <textarea
                     id = "message"
                     className="message-box input-box"
@@ -119,13 +119,14 @@ const Contact = () => {
                     <p className='errormessage'>{contactErrors.MessageData}</p>
 
             
-            <label className="form-label">
+            <label className="form-label" htmlFor="checkbox">
               <input
                       id = "checkbox"
                       type="checkbox"
                       onChange={()=>{
-                          setChecked(!checked)
-                      }}/>
+                          setChecked(!checked)}}
+                      
+                      />
                       {/* {checked.toString()}   To display output*/}
                       You agree to providing your data to Chinwendu who may contact you.
             </label>

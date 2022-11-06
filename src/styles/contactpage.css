@@ -38,16 +38,34 @@
     height: 1.5rem;
     background: #FFFFFF;
     border: 1px solid #D0D5DD;
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    /* box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05); */
     border-radius: 8px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 24px;    
+
 
     
+
+/* Auto layout */
+
 }
+
+input:focus { 
+    outline: none !important;
+    border-color: #84CAFF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
+
+}
+textarea:focus { 
+    outline: none !important;
+    border-color: #84CAFF;
+    /* box-shadow: 0 0 10px #84CAFF; */
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
+}
+
 .first-row{
     display: flex;
     flex: 1;
@@ -68,7 +86,7 @@
     /*text-align: top;*/
     padding-top: 4px;
     padding-bottom: 8rem;
-    line-height: 44px;
+    /* line-height: 44px; */
 }
 
 .message-box::placeholder{
@@ -151,3 +169,5 @@
     }
 
   }
+
+  
