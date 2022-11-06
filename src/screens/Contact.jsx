@@ -114,7 +114,7 @@ const Contact = () => {
                     name = "MessageData"
                     type="text"
                     value = {messageData}
-                    placeholder= "Send me a message! "
+                    placeholder= "Send me a message and I'll reply you as soon as possible..."
                     onChange={e => setMessageData(e.target.value)}/>
                     <p className='errormessage'>{contactErrors.MessageData}</p>
 
