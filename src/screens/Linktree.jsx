@@ -7,7 +7,7 @@ import share from '../images/share_button.svg'
 
 import '../App.css'
 
-import {Link} from "react-router-dom"
+// import {Link} from "react-router-dom"
 import Footer from '../components/Footer'
 
 
@@ -52,8 +52,8 @@ const Linktree = () => {
 
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
             {/*} onClick={()=>navigate("/contact")} */}
-          {/* <a className="button-link" id="contact" href="/contact" > Contact Me</a>  */}
-          <Link className="button-link" to='/contact' id='contact'> Contact Me </Link> 
+           <a className="button-link" id="contact" href="/contact" > Contact Me </a>  
+          {/* <Link className="button-link" to='/contact' id='contact'> Contact Me </Link>  */}
         </div>
 
         <div className="social-div">
