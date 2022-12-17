@@ -1,5 +1,5 @@
 # HNG9-Task-1-Linktree
-Live Demo: 	[Chinwendu's Linktree Clone ](https://chinwendu-nweje-hng-linktree.netlify.app)
+Live Demo: 	[Chinwendu's Linktree Clone ](https://chinwendu-nweje-hng-task.netlify.app/)
 -----------------------------------------------------
 
 This is the first task of the HNG internship. HNG Internship is a remote internship that enables individuals learn and improve their skills by working on real-world projects. It is for people learning to code/design/manage and want to accelerate their knowledge.
